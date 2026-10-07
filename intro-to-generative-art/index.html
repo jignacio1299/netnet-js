@@ -1,10 +1,12 @@
+<!-- Author: Jarrette Ignacio -->
+
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/nn.min.js"></script>
 <script>
   /* global nn */
 
   function tenPrint() {
-    const hue = nn.random(240)
+    const hue = nn.random(240, 360)
     const clr = nn.hsl(hue, 100, 20)
     const chars = '=-+/\\'
     let pattern = ''
