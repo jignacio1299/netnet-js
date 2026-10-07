@@ -1,0 +1,33 @@
+<!-- Author: Jarrette Ignacio -->
+<script>
+
+function onKawara () {
+  document.body.style.background = 'purple'
+  document.body.style.height = '100vh'
+  document.body.style.display = 'grid'
+  document.body.style.justifyContent = 'center'
+  document.body.style.alignItems = 'center'
+
+  const d = new Date()
+  const day = d.getDate()
+  const months = [
+    'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'
+  ]
+  const m = d.getMonth()
+  const month = months[m]
+  const year = d.getFullYear()
+  const dateString = `${month}. ${day}, ${year}`
+  
+  const span = document.createElement('span')
+  span.textContent = dateString
+  span.style.color = 'orange'
+  span.style.fontSize = '12vw'
+  span.style.fontFamily = 'Verdana, Futura, "Trebuchet MS", Arial, sans-serif'
+  document.body.appendChild(span)
+}
+
+window.addEventListener('load', onKawara)
+
+</script>
+
