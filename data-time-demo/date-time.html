@@ -17,7 +17,7 @@ function onKawara () {
   const m = d.getMonth()
   const month = months[m]
   const year = d.getFullYear()
-  const dateString = `${month}. ${day}, ${year}`
+  const dateString = `${year}/${m}/${day}`
   
   const span = document.createElement('span')
   span.textContent = dateString
